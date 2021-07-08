@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <section>
+        <p>
+            <label for="car">
+                <span>Choose a car</span>
+            </label>
+            <select name="car" id="option_car">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="tesla">Tesla</option>
+            </select>
+        </p>
+    </section>
+    
+    <div class="pesquisa">    
+        <p>Please select your favorite vehicles:</p>
+        <form action="checkbox">
+        <p>
+            <input type="checkbox" id="pergunta_um" name="vehicles" value="1">
+            <label for="pergunta_um">I have a bike</label>
+        </p>
+        <p>
+            <input type="checkbox" id="pergunta_dois" name="vehicles" value="1">
+            <label for="pergunta_dois">I have car</label>
+        </p>
+        <p>
+            <input type="checkbox" id="pergunta_tres" name="boat" value="1">
+            <label for="pergunta_tres">I have a boat</label>
+        </p>
+    </form>
+
+    <div class="monster">
+        <p>Chose your monster's features:</p>
+        <form action="text">
+            <input type="checkbox" id="scales" name="monster" value="1">
+            <label for="scales">Scales</label>
+            <input type="checkbox" id="horns" name="monster" value="1">
+            <label for="horns">Horns</label>
+            <input type="checkbox" id="powerfull" name="monster" value="1">
+            <label for="powerfull">Powerfull</label>
+        </form>        
+    </div>
+
+    <div class="web_language">
+        <p>Please select your favorite Web language</p>
+        <form action="checkbox">
+            <p>
+                <input type="radio" id="pergunta_um" name="web" value="1">
+                <label for="html">HTML</label>
+            </p>
+            <p>
+                <input type="radio" id="pergunta_dois" name="web" value="1">
+                <label for="css">CSS</label>
+            </p>
+            <p>
+                <input type="radio" id="pergunta_tres" name="web" value="1">
+                <label for="js">JavaScript</label>
+            </p>
+        </form>
+    </div>
+
+    <div class="submit">
+        <p>Contact information</p>            
+                <label for="name">
+                    <span>First name:</span>
+                    <strong><abbr title="required"></abbr></strong>
+                </label>
+                <input type="text" id="name" name="name" placeholder="Name">
+            <p>Last name:
+                <label for="last_name">
+                    <input type="text" name="last_name" id="last_name" placeholder="Last name">
+                </label>
+            </p>
+    </div>
+    <p><button type="submit">Submit</button></p>
+    <p>&copy;2021</p>
+    
+</body>
+</html>
